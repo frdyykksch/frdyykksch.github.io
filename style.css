@@ -1,0 +1,105 @@
+html {
+    --main-color: #FEFAF3;
+    --href-color: #3368A0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-color);
+
+}
+
+.mainc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.headerc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#title {
+    width: fit-content;
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    opacity: 80%;
+}
+
+.tags > * {
+    margin: 0;
+    padding: 0;
+}
+
+.infotag {
+    color: var(--href-color);
+}
+.aboutc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    width: 90%;
+    max-width: 70ch;
+}
+
+.sectionc {
+    display: block;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    text-align: justify;
+}
+
+.sectionc > p {
+    margin: 0;
+}
+
+.sectionc > p + p {
+    margin-top: 1.6em;
+}
+
+.section-nav {
+    padding: 0;
+}
+
+.section-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--href-color);
+}
+
+.sectionc.markdown > * {
+    margin: 0;
+}
+
+.sectionc.markdown > * + * {
+    margin-top: 1rem;
+}
+
+.sectionc.markdown img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+}
+
+.divide {
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    opacity: 20%;
+}

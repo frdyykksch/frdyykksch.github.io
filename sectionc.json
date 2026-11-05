@@ -1,0 +1,18 @@
+{
+    "sections": {
+        "about": [
+            "I currently study computer science at Université Paris-Saclay as an undergraduate. I am set to graduate next summer in 2027.",
+            "In my free time I am mostly making music using FL Studio and a Moog Matriarch synthesizer, working on programming projects, or fixing, building and improving stuff during the summer (e.g., fixing an Onkyo AV Receiver).",
+            ""
+        ],
+        "projects": [
+            "projects",
+            "..."
+        ],
+        "notes": [
+            "notes.md",
+            "...",
+            "..."
+        ]
+    }
+}
