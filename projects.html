@@ -10,14 +10,7 @@
         <div class="mainc">
 
             <!-- including title and maybe some links/info -->
-            <div class="headerc">
-                <h1 id="title">Frederik Kockisch</h1>
-                <div class="tags">
-                    <p>based in <span class="infotag">Hamburg, Germany</span></p>
-                    <p>@ <span class="infotag">Université Paris-Saclay</span></p>
-                </div>
-
-            </div>
+            <div class="headerc" include="./components/headerc.html"></div>
 
             <!-- divider placeholder -->
             <div class="divide"></div>
@@ -27,7 +20,7 @@
                 <nav class="section-nav">
                     <ul class="section-ul">
                         <li><a href="index.html">about me</a></li>
-                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="projects.html" aria-current="page">projects</a></li>
                         <li><a href="notes.html">notes.md</a></li>
                     </ul>
                 </nav>
@@ -38,6 +31,8 @@
                 </div>
             </div>
 
+            <div class="footerc" include="./components/footerc.html"></div>
         </div>
+        <script src="./index.js"></script>
     </body>
 </html>

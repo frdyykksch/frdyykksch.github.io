@@ -11,14 +11,7 @@
         <div class="mainc">
 
             <!-- including title and maybe some links/info -->
-            <div class="headerc">
-                <h1 id="title">Frederik Kockisch</h1>
-                <div class="tags">
-                    <p>based in <span class="infotag">Hamburg, Germany</span></p>
-                    <p>@ <span class="infotag">Université Paris-Saclay</span></p>
-                </div>
-
-            </div>
+            <div class="headerc" include="./components/headerc.html"></div>
 
             <!-- divider placeholder -->
             <div class="divide"></div>
@@ -29,13 +22,14 @@
                     <ul class="section-ul">
                         <li><a href="index.html">about me</a></li>
                         <li><a href="projects.html">projects</a></li>
-                        <li><a href="notes.html">notes.md</a></li>
+                        <li><a href="notes.html" aria-current="page">notes.md</a></li>
                     </ul>
                 </nav>
 
                 <div class="sectionc markdown"></div>
             </div>
 
+            <div class="footerc" include="./components/footerc.html"></div>
         </div>
 
         <script>
@@ -47,5 +41,6 @@
 
             loadNotes();
         </script>
+        <script src="./index.js"></script>
     </body>
 </html>

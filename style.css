@@ -6,12 +6,17 @@ html {
 
 }
 
+body {
+    margin: 0;
+}
+
 .mainc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2vh;
+    min-height: 100vh;
 }
 
 .headerc {
@@ -79,6 +84,10 @@ html {
     padding: 0;
 }
 
+.section-ul a:not([aria-current="page"]) {
+    opacity: 60%;
+}
+
 a {
     color: var(--href-color);
 }
@@ -102,4 +111,33 @@ a {
     height: 1px;
     background-color: black;
     opacity: 20%;
+}
+
+.footerc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    width: 100%;
+    opacity: 60%;
+    margin-top: auto;
+    padding-bottom: 2vh;
+    position: relative;
+}
+
+#last-modified {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 }

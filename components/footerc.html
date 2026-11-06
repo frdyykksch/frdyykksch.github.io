@@ -1,0 +1,18 @@
+<div class="divide"></div>
+<div class="socials">
+    <a href="mailto:frederik@kockisch.eu" target="_blank" rel="noopener noreferrer">email</a>
+    <a href="https://github.com/frdyykksch" target="_blank" rel="noopener noreferrer">github</a>
+    <a href="https://instagram.com/frdyy_kksch" target="_blank" rel="noopener noreferrer">instagram</a>
+</div>
+<p id="last-modified"></p>
+
+<script>
+    function updateLastModified() {
+        const lastModified = new Date(document.lastModified);
+        const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+        const pad = (n) => String(n).padStart(2, '0');
+        const date = `${pad(lastModified.getUTCDate())} ${months[lastModified.getUTCMonth()]} ${lastModified.getUTCFullYear()}`;
+        const time = `${pad(lastModified.getUTCHours())}:${pad(lastModified.getUTCMinutes())}`;
+        document.getElementById('last-modified').textContent = `last modified ${date} at ${time} UTC`;
+    } updateLastModified();
+</script>
